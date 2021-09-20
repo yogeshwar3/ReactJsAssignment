@@ -1,0 +1,15 @@
+.um-image {
+    object-fit: cover;
+}
+
+.um-header {
+    background-color: #ff9999;
+    padding: 8px 8px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.um-movies {
+    flex-wrap: nowrap !important;
+    overflow: auto;
+}

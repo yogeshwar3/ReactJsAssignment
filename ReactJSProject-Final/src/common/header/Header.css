@@ -1,0 +1,46 @@
+.header {
+    height: 36px;
+    background-color: #222;
+
+    /*padding from the top of 8px, bottom of 8px, right of 32px and left of 16px.*/
+    padding: 8px 32px 8px 16px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 35px;
+    background-color: #ff7f7f;
+    animation: spin 8s linear infinite;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@-webkit-keyframes spin{
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+    to {
+        -webkit-transform: rotateY(-360deg);
+    }
+}
+
+@keyframes spin{
+    from {
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+
+    to {
+        -moz-transform: rotateY(-360deg);
+        -ms-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+    }
+}
